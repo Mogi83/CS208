@@ -3,23 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>CS208 - Evan's Website</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
+  <h1>Evan's Website</h1>
   <ul>
   <li><a href="/hello">Click here to say hello</a></li>
   <li><button id="hello-link">Click Me!</button></li>
   <li><button id="joke-button">Dad Joke!</button></li>
   <script src="script.js"></script>
   </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
-
+  <p> Images are boring, observe this frog:</p>
+  <video src="the-frog-mage-pond.mp4" autoplay muted loop playsinline width="474" height="474"></video>
   <h2 id="joke-display"></h2>
 </body>
+<p>I wrote this dark mode button, your eyes are welcome.</p>
+
+<footer>
+  <button onclick="toggleLightMode()">Toggle dark mode</button>
+</footer>
+
+<script>
+  function toggleLightMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+  }
+</script>
 
 </html>

@@ -1,7 +1,8 @@
-// This is a simple JavaScript file that adds interactivity to the HTML page
-// It defines a function to show an alert when a link is clicked
+// rewrote the sayHello() function to instead count how many times you have clicked the button. 
+let clickCount = 0;
 function sayHello() {
-    alert("Hello, world from javascript!");
+    clickCount++; 
+    alert("Hello, world from JavaScript! You've clicked " + clickCount + " times.");
 }
 // This function will be called when the link is clicked
 // It shows an alert with a message
