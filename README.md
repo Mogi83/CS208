@@ -2,7 +2,8 @@
 - Templated off of CS208's starter code located ![here](https://github.com/shanep/CS208-starter-code) for educational purposes.
 
 ## Quickstart guide:
-- Open the terminal in your codespace.
+- Clone this repository to a local machine or codespace.
+- Navigate to where that repository was cloned to and open a terminal.
 - Run `npm install` to install the dependencies.
 - Run `npm start` to start the server.
 
