@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hometown</title>
+        <meta name="description" content="Informational data about the author">
+        <meta name="author" content="Evan Bullwinkle">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="location">
+        <h1>Lemoore, California</h1>
+        <section>
+            <h2>Location</h2>
+            <p>Lemoore is located 33 miles south from Fresno and 200 miles north of Los Angeles.</p>
+        </section>
+
+        <section>
+            <h2>About</h2>
+            <section>
+                <h3>Weather</h3>
+                <p>Lemoore like most of California has a fairly moderate temprature except in the summertime where it can reach 105&#176;!</p>
+            </section>
+            <section>
+                <h3>Population</h3>
+                <p>As of the 2020 Census the population in Lemoore was approximately 27,038</p>
+            </section>
+            <section>
+                <h3>Activites</h3>
+                <p>Due to the realatively small size of the town(compareable to Eagle) there is not much to do in Lemoore. Most people use its low cost housing and comute to more sizable cities for work.</p>
+            </section>
+        </section>
+
+        <section>
+            <p>There is very little to do in the town from my memory (over 10 years ago now)</p>
+            <h2>Things To Do:</h2>
+            <ul>
+                <li>Attend the <strong>only</strong> local community college, West Hills.</li>
+                <li>Utilize easy highway access and central geographic location to visit other places in California.</li>
+                <li>Go to the movies.</li>
+            </ul>
+        </section>
+    </body>
+
+    <footer>
+        <button onclick="toggleLightMode()">Toggle dark mode</button>
+        <a href="/" class="btn">Homepage</a>
+    </footer>
+
+    <script>
+    function toggleLightMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>
+
+</html>
