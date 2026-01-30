@@ -44,6 +44,33 @@ ul {
     color: #66b2ff;
 }
 
+/* Dark mode toggle button styling */
+footer button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+footer button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 .btn {
     display: inline-block;
     background: #b1b1b1;
@@ -51,4 +78,98 @@ ul {
     color: black;
     text-decoration: none;
     border-radius: 4px;
+}
+
+/* Navigation bar styling */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav-button {
+    display: inline-block;
+    background: #b1b1b1;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #999;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-button:hover {
+    background: #999;
+    border-color: #777;
+}
+
+.dark-mode .nav-button {
+    background: #555;
+    color: white;
+    border-color: #777;
+}
+
+.dark-mode .nav-button:hover {
+    background: #666;
+    border-color: #888;
+}
+
+/* Dark mode button styling to match nav buttons */
+.dark-mode-btn {
+    display: inline-block;
+    background: #b1b1b1;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #999;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dark-mode-btn:hover {
+    background: #999;
+    border-color: #777;
+}
+
+.dark-mode .dark-mode-btn {
+    background: #555;
+    color: white;
+    border-color: #777;
+}
+
+.dark-mode .dark-mode-btn:hover {
+    background: #666;
+    border-color: #888;
+}
+
+/* Responsive image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Blog post styling for rattlesnakes page */
+body.blog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+body.blog img {
+    max-width: 60%;
+    margin: 20px auto;
 }

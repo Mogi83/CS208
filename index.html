@@ -9,11 +9,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="home">
+<body class="home dark-mode">
   <h1>Evan's Website</h1>
+  <!-- Need to update this to work on mobile devices -->
+  <nav>
+    <ul>
+      <li><a href="/" class="nav-button">Homepage</a></li>
+      <li><a href="/hometown.html" class="nav-button">Hometown</a></li>
+      <li><a href="/rattlesnakes.html" class="nav-button">Rattlesnakes</a></li>
+    </ul>
+  </nav>
   <ul>
     <li><a href="/hello">Click here to say hello</a></li>
-    <li><a href="/hometown.html">Interested in my hometown? Click here!</a></li>
     <li><button id="hello-link">Click Me!</button></li>
     <li><button id="joke-button">Dad Joke!</button></li>
     <script src="script.js"></script>
@@ -23,10 +30,8 @@
   <h2 id="joke-display"></h2>
 </body>
 
-<p>I wrote this dark mode button, your eyes are welcome.</p>
-
 <footer>
-  <button onclick="toggleLightMode()">Toggle dark mode</button>
+  <button onclick="toggleLightMode()" class="dark-mode-btn">Toggle dark mode</button>
 </footer>
 
 <script>

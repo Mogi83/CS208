@@ -9,8 +9,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="location">
+    <body class="location dark-mode">
         <h1>Lemoore, California</h1>
+        <nav>
+            <ul>
+                <li><a href="/" class="nav-button">Homepage</a></li>
+                <li><a href="/hometown.html" class="nav-button">Hometown</a></li>
+                <li><a href="/rattlesnakes.html" class="nav-button">Rattlesnakes</a></li>
+            </ul>
+        </nav>
         <section>
             <h2>Location</h2>
             <p>Lemoore is located 33 miles south from Fresno and 200 miles north of Los Angeles.</p>
@@ -44,8 +51,7 @@
     </body>
 
     <footer>
-        <button onclick="toggleLightMode()">Toggle dark mode</button>
-        <a href="/" class="btn">Homepage</a>
+        <button onclick="toggleLightMode()" class="dark-mode-btn">Toggle dark mode</button>
     </footer>
 
     <script>
