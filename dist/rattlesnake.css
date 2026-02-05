@@ -1,0 +1,89 @@
+/* Start AI CSS */
+
+/* Both article's images styled with a width of 300px */
+article img {
+    width: 300px;
+}
+
+/* Article's <h1> element styled with:
+   - 5px padding all around
+   - Font family of Arial
+   - Font size of 24px
+   - Font color of white
+   - Background color of red */
+article h1 {
+    padding: 5px;
+    font-family: Arial;
+    font-size: 24px;
+    color: white;
+    background-color: red;
+}
+
+/* Selecting the id of author-name-and-date, style the author name and date with:
+   - Font family of Arial
+   - Font size of 12px
+   - Font color of gray */
+#author-name-and-date {
+    font-family: Arial;
+    font-size: 12px;
+    color: gray;
+}
+
+/* Article's text (<p> and <ol> elements) styled with:
+   - Font family of Times New Roman
+   - Font size of 16px
+   - Font color of DarkSlateGray */
+article p,
+article ol {
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: DarkSlateGray;
+}
+
+/* Article's share links (<a> elements) styled with:
+   - Font family of Arial
+   - Font size of 12px
+   - Font color of blue */
+article a {
+    font-family: Arial;
+    font-size: 12px;
+    color: blue;
+}
+
+/* End AI CSS */
+
+
+
+/* Navigation bar styling */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav-button {
+    display: inline-block;
+    background: #b1b1b1;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #999;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-button:hover {
+    background: #999;
+    border-color: #777;
+}
