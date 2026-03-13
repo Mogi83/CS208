@@ -55,3 +55,31 @@ document.addEventListener("DOMContentLoaded", function() {
             jokeDisplay.textContent = joke;
     });
 });
+
+
+// Sports lineup assignment:
+
+document.getElementById('submitBtn').addEventListener('click', myLineUp);
+
+function myLineUp(event) {
+    event.preventDefault();
+
+    const status = document.querySelector('input[name="status"]:checked').value;
+    const gameDate = document.getElementById('gameDate').value;
+    const playerCheckboxes = document.querySelectorAll('input[name="player"]:checked');
+    let players = [];
+    
+    playerCheckboxes.forEach((checkbox) => {
+        players.push(checkbox.value);
+    });
+
+    const resultString = `Status: ${status} | Date: ${gameDate} | Players: ${players.join(', ') || 'None selected'}`;
+
+    console.log("Form Data Received:");
+    console.log("Status:", status);
+    console.log("Date:", gameDate);
+    console.log("Players:", players);
+    
+    const displayArea = document.getElementById('displayArea');
+    displayArea.innerHTML = `<h3>Submission Summary:</h3><p>${resultString}</p>`;
+}
